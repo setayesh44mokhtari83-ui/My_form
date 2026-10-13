@@ -1,0 +1,37 @@
+
+<html>
+<body>
+
+<form onsubmit="show(); return false;">
+
+Name:
+<input type="text" id="n" value="ستایش"><br><br>
+
+LName:
+<input type="text" id="l" value="مختاری"><br><br>
+
+Age:
+<input type="number" id="a" value="22"><br><br>
+
+Email:
+<input type="email" id="e" value="setayesh44mokhtari83@gmail.com"><br><br>
+
+<button type="submit">ثبت نام</button>
+
+</form>
+
+<p id="result"></p>
+
+<script>
+function show() {
+document.getElementById("result").innerHTML =
+"ثبت نام موفق بود!<br>" +
+"نام: " + document.getElementById("n").value + "<br>" +
+"نام خانوادگی: " + document.getElementById("l").value + "<br>" +
+"سن: " + document.getElementById("a").value + "<br>" +
+"ایمیل: " + document.getElementById("e").value;
+}
+</script>
+
+</body>
+</html>
